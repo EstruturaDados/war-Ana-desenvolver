@@ -31,15 +31,15 @@ int main() {
     for (int i = 0; i < QTDE_TERRITORIOS; i++) {
         printf("Territorio %d:\n", i + 1);
 
-        printf("Nome: ");
+        printf("Digite o nome do territorio: ");
         fgets(mapa[i].nome, 50, stdin);
         mapa[i].nome[strcspn(mapa[i].nome, "\n")] = 0; // remove o \n
 
-        printf("Cor do exercito: ");
+        printf("Digite a cor do exercito: ");
         fgets(mapa[i].corExercito, 30, stdin);
         mapa[i].corExercito[strcspn(mapa[i].corExercito, "\n")] = 0;
 
-        printf("Numero de tropas: ");
+        printf("Digite o numero de tropas: ");
         scanf("%d", &mapa[i].tropas);
         getchar(); // limpa o buffer do Enter
 
