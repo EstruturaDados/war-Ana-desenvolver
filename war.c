@@ -45,3 +45,14 @@ int main() {
 
         printf("\n");
     }
+ // Exibir estado atual do mapa
+    printf("\n=== Estado Atual do Mapa ===\n\n");
+    for (int i = 0; i < QTDE_TERRITORIOS; i++) {
+        printf("Territorio %d:\n", i + 1);
+        printf("Nome: %s\n", mapa[i].nome);
+        printf("Cor do Exercito: %s\n", mapa[i].corExercito);
+        printf("Tropas: %d\n\n", mapa[i].tropas);
+    }
+
+    return 0;
+}
